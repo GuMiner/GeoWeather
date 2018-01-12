@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using GeoWeather.Stations;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace GeoWeather
     {
         public WeatherData()
         {
-            this.Station = StationCallsigns.ATX;
+            this.Station = KnownStations.Stations.First().Callsign;
             this.RadarLayers = new List<RadarLayer>()
             {
                 RadarLayer.Topography,
@@ -19,7 +20,7 @@ namespace GeoWeather
             };
         }
 
-        public StationCallsigns Station { get; set; }
+        public string Station { get; set; }
 
         [JsonProperty(ObjectCreationHandling = ObjectCreationHandling.Replace)]
         public List<RadarLayer> RadarLayers { get; set; }

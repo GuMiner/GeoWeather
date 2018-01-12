@@ -26,20 +26,19 @@ namespace GeoWeather
         private const string RadarBaseUri = "https://radar.weather.gov/ridge/RadarImg/";
         private const string OverlayBaseUri = "https://radar.weather.gov/ridge/Overlays/";
         
-        public static string GetRadarLayerUri(StationCallsigns station, RadarLayer layer)
+        public static string GetRadarLayerUri(string stationCallsign, RadarLayer layer)
         {
-            string stationString = station.ToString().ToUpper();
             switch(layer)
             {
-                case RadarLayer.BaseReflectivity: return $"{RadarBaseUri}N0R/{stationString}_N0R_0.gif";
-                case RadarLayer.StormRelativeMotion: return $"{RadarBaseUri}N0S/{stationString}_N0S_0.gif";
-                case RadarLayer.OneHourPrecipitation: return $"{RadarBaseUri}N1P/{stationString}_N1P_0.gif";
+                case RadarLayer.BaseReflectivity: return $"{RadarBaseUri}N0R/{stationCallsign}_N0R_0.gif";
+                case RadarLayer.StormRelativeMotion: return $"{RadarBaseUri}N0S/{stationCallsign}_N0S_0.gif";
+                case RadarLayer.OneHourPrecipitation: return $"{RadarBaseUri}N1P/{stationCallsign}_N1P_0.gif";
 
-                case RadarLayer.Topography: return $"{OverlayBaseUri}Topo/Short/{stationString}_Topo_Short.jpg";
-                case RadarLayer.CountyBoundaries: return $"{OverlayBaseUri}County/Short/{stationString}_County_Short.gif";
-                case RadarLayer.Rivers: return $"{OverlayBaseUri}Rivers/Short/{stationString}_Rivers_Short.gif";
-                case RadarLayer.Highways: return $"{OverlayBaseUri}Highways/Short/{stationString}_Highways_Short.gif";
-                case RadarLayer.Cities: return $"{OverlayBaseUri}Cities/Short/{stationString}_City_Short.gif";
+                case RadarLayer.Topography: return $"{OverlayBaseUri}Topo/Short/{stationCallsign}_Topo_Short.jpg";
+                case RadarLayer.CountyBoundaries: return $"{OverlayBaseUri}County/Short/{stationCallsign}_County_Short.gif";
+                case RadarLayer.Rivers: return $"{OverlayBaseUri}Rivers/Short/{stationCallsign}_Rivers_Short.gif";
+                case RadarLayer.Highways: return $"{OverlayBaseUri}Highways/Short/{stationCallsign}_Highways_Short.gif";
+                case RadarLayer.Cities: return $"{OverlayBaseUri}Cities/Short/{stationCallsign}_City_Short.gif";
                 default: throw new Exception("Expected to retrieve a URI for this layer!");
             }
         }

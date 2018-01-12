@@ -22,7 +22,7 @@ namespace GeoWeather
             this.blobStore = blobStore;
         }
 
-        public async Task<AttachmentResponse> GetRadarImageAsync(StationCallsigns station, List<RadarLayer> layers)
+        public async Task<AttachmentResponse> GetRadarImageAsync(string station, List<RadarLayer> layers)
         {
             List<Image> images = new List<Image>();
             foreach (RadarLayer layer in layers)
