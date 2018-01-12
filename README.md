@@ -22,5 +22,14 @@ Station closestWeatherStation = StationLocator.FindClosestStation(location);
 ```
 ### Weather Data
 ```csharp
+using GeoWeather;
+using GeoWeather.Layers;
+
+WeatherSettings settings = new WeatherSettings(); // Defaults to a NOAA station and two layers.
+IStore dataStore = ... // Created from the https://github.com/GuMiner/BotCommon library
+
+// Get a weather image (as a SAS URI that will expire in approximately one year).
+AttachmentResponse weatherImageAsABotResponseMessage = 
+    await LayerRetriever.GetRadarImageAsync(settings, dataStore, "weather-blob-container", TimeSpan.FromDays(365));
 ```
 
