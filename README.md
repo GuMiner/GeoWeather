@@ -1,5 +1,6 @@
 # GeoWeather
 A simple library to retrieve publically-available geospacial and weather data in the USA.
+Uses the [BotCommon](https://github.com/GuMiner/BotCommon) library to simplify sending weather responses to [Bot Framework](https://dev.botframework.com/) bots.
 
 ## APIs
 ### Geospacial

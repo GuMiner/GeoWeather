@@ -31,5 +31,95 @@ namespace GeoWeather.Properties {
                 return ((string)(this["LocationQueryUriFormatString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://radar.weather.gov/ridge/RadarImg/")]
+        public string RadarBaseUri {
+            get {
+                return ((string)(this["RadarBaseUri"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://radar.weather.gov/ridge/Overlays/")]
+        public string OverlayBaseUri {
+            get {
+                return ((string)(this["OverlayBaseUri"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("N0R/{0}_N0R_0.gif")]
+        public string BaseReflectivityFormatString {
+            get {
+                return ((string)(this["BaseReflectivityFormatString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("N0S/{0}_N0S_0.gif")]
+        public string StormRelativeMotionFormatString {
+            get {
+                return ((string)(this["StormRelativeMotionFormatString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("N1P/{0}_N1P_0.gif")]
+        public string OneHourPrecipitationFormatString {
+            get {
+                return ((string)(this["OneHourPrecipitationFormatString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Topo/Short/{0}_Topo_Short.jpg")]
+        public string TopographyFormatString {
+            get {
+                return ((string)(this["TopographyFormatString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("County/Short/{0}_County_Short.gif")]
+        public string CountyBoundariesFormatString {
+            get {
+                return ((string)(this["CountyBoundariesFormatString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Rivers/Short/{0}_Rivers_Short.gif")]
+        public string RiversFormatString {
+            get {
+                return ((string)(this["RiversFormatString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Highways/Short/{0}_Highways_Short.gif")]
+        public string HighwaysFormatString {
+            get {
+                return ((string)(this["HighwaysFormatString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Cities/Short/{0}_City_Short.gif")]
+        public string CitiesFormatString {
+            get {
+                return ((string)(this["CitiesFormatString"]));
+            }
+        }
     }
 }

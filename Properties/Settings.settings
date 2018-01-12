@@ -5,5 +5,35 @@
     <Setting Name="LocationQueryUriFormatString" Type="System.String" Scope="Application">
       <Value Profile="(Default)">http://dev.virtualearth.net/REST/v1/Locations/{0}?o=json&amp;key={1}</Value>
     </Setting>
+    <Setting Name="RadarBaseUri" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://radar.weather.gov/ridge/RadarImg/</Value>
+    </Setting>
+    <Setting Name="OverlayBaseUri" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://radar.weather.gov/ridge/Overlays/</Value>
+    </Setting>
+    <Setting Name="BaseReflectivityFormatString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">N0R/{0}_N0R_0.gif</Value>
+    </Setting>
+    <Setting Name="StormRelativeMotionFormatString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">N0S/{0}_N0S_0.gif</Value>
+    </Setting>
+    <Setting Name="OneHourPrecipitationFormatString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">N1P/{0}_N1P_0.gif</Value>
+    </Setting>
+    <Setting Name="TopographyFormatString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Topo/Short/{0}_Topo_Short.jpg</Value>
+    </Setting>
+    <Setting Name="CountyBoundariesFormatString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">County/Short/{0}_County_Short.gif</Value>
+    </Setting>
+    <Setting Name="RiversFormatString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Rivers/Short/{0}_Rivers_Short.gif</Value>
+    </Setting>
+    <Setting Name="HighwaysFormatString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Highways/Short/{0}_Highways_Short.gif</Value>
+    </Setting>
+    <Setting Name="CitiesFormatString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Cities/Short/{0}_City_Short.gif</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

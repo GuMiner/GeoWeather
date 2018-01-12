@@ -55,10 +55,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ImageUtils.cs" />
+    <Compile Include="Layers\LayerStack.cs" />
+    <Compile Include="Layers\RadarLayerType.cs" />
+    <Compile Include="Layers\RadarLayerUris.cs" />
     <Compile Include="Location\LocationDataTypes.cs" />
     <Compile Include="Location\LocationQuerier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Layers\RadarLayer.cs" />
+    <Compile Include="Layers\RadarLayerTypeNames.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
@@ -66,8 +70,8 @@
     </Compile>
     <Compile Include="Stations\KnownStations.cs" />
     <Compile Include="Stations\StationLocator.cs" />
-    <Compile Include="Layers\WeatherData.cs" />
-    <Compile Include="Layers\WeatherLayerRetriever.cs" />
+    <Compile Include="WeatherSettings.cs" />
+    <Compile Include="Layers\LayerRetriever.cs" />
     <Compile Include="Stations\Station.cs" />
   </ItemGroup>
   <ItemGroup>
