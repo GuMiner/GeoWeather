@@ -22,8 +22,10 @@ Station closestWeatherStation = StationLocator.FindClosestStation(location);
 ```
 ### Weather Data
 ```csharp
+using BotCommon;
 using GeoWeather;
 using GeoWeather.Layers;
+using System;
 
 WeatherSettings settings = new WeatherSettings(); // Defaults to a NOAA station and two layers.
 IStore dataStore = ... // Created from the https://github.com/GuMiner/BotCommon library
