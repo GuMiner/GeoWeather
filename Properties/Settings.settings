@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="GeoWeather.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="LocationQueryUriFormatString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://dev.virtualearth.net/REST/v1/Locations/{0}?o=json&amp;key={1}</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
